@@ -227,11 +227,12 @@ function changeName(array, index, name){
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, num) {
-   const artistInfo = array[num}
-  return "The artist at index " + artistInfo.id + " is " + artistInfo.name.
+function getArtistByIndex(array, index) {
+  const id = array[index].id 
+   const name = array[index].name 
+  return `The artist at index ${id} is ${name}.`
   }
-  
+  console.log(getArtistByIndex(artists, 0))
   /**
 
 
@@ -240,7 +241,7 @@ function getArtistByIndex(array, num) {
 function get20s(){
  const artTwenty =[]
  for(let i = 0; i < artisits.length; i++){
-  console.log(artists[i].includes('Delicious'));
+  console.log(artists[i].includes(i>= 1900));
 
 
   return artTwenty.push()
@@ -259,7 +260,7 @@ function get20s(){
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, index) {
-    /* code here */
+    
   }
   
   /**
