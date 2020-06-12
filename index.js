@@ -245,9 +245,8 @@ function get20s(arr){
    if (arr[i].years.includes("19")){
     artTwenty.push(arr[i].name)
   }
-    return artTwenty
- 
   }
+  return artTwenty
 }
 console.log(get20s(artists))
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -261,11 +260,10 @@ console.log(get20s(artists))
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, index) {
-  const remArt = array.splice(index, 1) 
-  return console.log(array.length)
-   
+   array.splice(index, 1) 
+  console.log(array.length)
 }
-console.log(removeArtist(artists, 3))
+removeArtist(artists, 3)
 
 
 
